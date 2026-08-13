@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Точка опоры — Лилия Гарипова, психолог-консультант</title>
-<meta name="description" content="Точка опоры — онлайн-консультации психолога Лилии Гариповой. Тревога, выгорание, отношения, границы, кризис смысла — без идеализации, с реальными инструментами.">
+<title>Психолог в Казани и онлайн — Лилия Гарипова | Точка опоры</title>
+<meta name="description" content="Психолог-консультант Лилия Гарипова — очные консультации в Казани и онлайн. Тревога, выгорание, отношения и границы, кризис смысла — без идеализации, с реальными инструментами.">
 <meta name="theme-color" content="#2e332b">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Точка опоры — Лилия Гарипова, психолог-консультант">
-<meta property="og:description" content="Онлайн-консультации: тревога и выгорание, отношения и границы, кризис смысла. Без идеализации — только рабочие инструменты.">
+<meta property="og:title" content="Психолог в Казани и онлайн — Лилия Гарипова | Точка опоры">
+<meta property="og:description" content="Очные консультации в Казани и онлайн: тревога и выгорание, отношения и границы, кризис смысла. Без идеализации — только рабочие инструменты.">
 <meta property="og:image" content="https://liliya-garipova.ru/og-image.png">
 <meta property="og:url" content="https://liliya-garipova.ru/">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Точка опоры — Лилия Гарипова, психолог-консультант">
-<meta name="twitter:description" content="Онлайн-консультации: тревога и выгорание, отношения и границы, кризис смысла.">
+<meta name="twitter:title" content="Психолог в Казани и онлайн — Лилия Гарипова | Точка опоры">
+<meta name="twitter:description" content="Очные консультации в Казани и онлайн: тревога и выгорание, отношения и границы, кризис смысла.">
 <meta name="twitter:image" content="https://liliya-garipova.ru/og-image.png">
 <link rel="canonical" href="https://liliya-garipova.ru/">
 <meta name="google-site-verification" content="PA6OUBIQsQDjvZAm_HTqSFWzqesARnvlUuNGgHdyroY" />
@@ -24,27 +24,77 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Лилия Гарипова",
-  "jobTitle": "Психолог-консультант",
-  "description": "Онлайн-консультации психолога: тревога и выгорание, отношения и границы, кризис смысла и идентичности.",
-  "url": "https://liliya-garipova.ru/",
-  "image": "https://liliya-garipova.ru/ps_hero.webp",
-  "telephone": "+7 905 021-85-35",
-  "sameAs": [
-    "https://t.me/Liliya8619",
-    "https://t.me/psychology2025Liliya",
-    "https://wa.me/79050218535"
-  ],
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Онлайн-консультация психолога",
-      "areaServed": "Онлайн",
-      "provider": { "@type": "Person", "name": "Лилия Гарипова" }
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://liliya-garipova.ru/#person",
+      "name": "Лилия Гарипова",
+      "jobTitle": "Психолог-консультант",
+      "description": "Психолог-консультант в Казани: очные консультации и работа онлайн. Тревога и выгорание, отношения и границы, кризис смысла и идентичности.",
+      "url": "https://liliya-garipova.ru/",
+      "image": "https://liliya-garipova.ru/ps_hero.webp",
+      "telephone": "+7 905 021-85-35",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Казань",
+        "addressRegion": "Республика Татарстан",
+        "addressCountry": "RU"
+      },
+      "sameAs": [
+        "https://t.me/Liliya8619",
+        "https://t.me/psychology2025Liliya",
+        "https://wa.me/79050218535"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://liliya-garipova.ru/#practice",
+      "name": "Точка опоры — психолог Лилия Гарипова",
+      "description": "Консультации психолога в Казани очно и онлайн: тревога, выгорание, отношения и границы, самооценка, кризис смысла.",
+      "url": "https://liliya-garipova.ru/",
+      "image": "https://liliya-garipova.ru/og-image.png",
+      "telephone": "+7 905 021-85-35",
+      "priceRange": "₽₽",
+      "founder": { "@id": "https://liliya-garipova.ru/#person" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Казань",
+        "addressRegion": "Республика Татарстан",
+        "addressCountry": "RU"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Казань" },
+        { "@type": "Country", "name": "Россия" }
+      ],
+      "availableLanguage": "ru",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Консультации психолога",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Очная консультация психолога в Казани",
+              "serviceType": "Психологическое консультирование",
+              "areaServed": { "@type": "City", "name": "Казань" },
+              "provider": { "@id": "https://liliya-garipova.ru/#person" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Онлайн-консультация психолога",
+              "serviceType": "Психологическое консультирование",
+              "areaServed": { "@type": "Country", "name": "Россия" },
+              "provider": { "@id": "https://liliya-garipova.ru/#person" }
+            }
+          }
+        ]
+      }
     }
-  }
+  ]
 }
 </script>
 
@@ -292,8 +342,8 @@
 
   /* Format strip */
   .format-section{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-  .format-grid{display:grid;grid-template-columns:repeat(3,1fr);}
-  .format-cell{text-align:center;padding:16px 40px;position:relative;}
+  .format-grid{display:grid;grid-template-columns:repeat(4,1fr);}
+  .format-cell{text-align:center;padding:16px 22px;position:relative;}
   .format-cell + .format-cell{border-left:1px solid var(--line);}
   .format-cell .icon-badge{margin:0 auto 20px;transition:transform .4s var(--ease);}
   .format-cell:hover .icon-badge{transform:translateY(-4px);}
@@ -405,6 +455,8 @@
     .about{grid-template-columns:1fr;gap:52px;}
     .method-item{grid-template-columns:64px 1fr;gap:20px;}
     .method-num{font-size:40px;}
+    .format-grid{grid-template-columns:repeat(2,1fr);row-gap:44px;}
+    .format-cell:nth-child(3){border-left:none;}
   }
   @media(max-width:640px){
     .menu-toggle{display:flex;align-items:center;}
@@ -470,9 +522,9 @@
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <div class="hero-note reveal">Онлайн · индивидуально · конфиденциально</div>
+      <div class="hero-note reveal">Казань · очно и онлайн · конфиденциально</div>
       <h1 class="reveal d1">Точка опоры — <em>психология</em>, которая держит <span class="accent-underline">на плаву<svg viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8 C 25 3, 55 10, 117 5"/></svg></span></h1>
-      <p class="sub reveal d2">Практикующий психолог-консультант Лилия Гарипова. Без готовых идеалов и «психо-жаргона» — только реальные инструменты, которые работают.</p>
+      <p class="sub reveal d2">Психолог-консультант Лилия Гарипова. Принимаю очно в Казани и работаю онлайн. Без готовых идеалов и «психо-жаргона» — только реальные инструменты, которые работают.</p>
       <div class="hero-buttons reveal d3">
         <a href="#contact" class="btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
@@ -517,7 +569,7 @@
     <div class="about-text reveal d1">
       <div class="eyebrow">Кто я</div>
       <h2>Обо мне</h2>
-      <p class="lead">Меня зовут Лилия Гарипова, я практикующий психолог-консультант. Пишу и работаю без пафоса и громких обещаний «всё наладить» — с уважением к вашему опыту и вашему темпу.</p>
+      <p class="lead">Меня зовут Лилия Гарипова, я практикующий психолог-консультант из Казани. Пишу и работаю без пафоса и громких обещаний «всё наладить» — с уважением к вашему опыту и вашему темпу.</p>
       <p>Здесь не стыдят за усталость, откладывание дел или трудность сказать «нет». Здесь ищут не идеальные ответы, а рабочие инструменты — то, что действительно помогает почувствовать опору под ногами.</p>
       <p>Если вам ближе тихая честность, чем громкие советы — вы в нужном месте.</p>
     </div>
@@ -602,15 +654,22 @@
     <div class="section-head center reveal">
       <div class="eyebrow">Организация</div>
       <h2>Формат работы</h2>
-      <p class="section-sub">Консультации онлайн, в удобном для вас темпе</p>
+      <p class="section-sub">Очно в Казани или онлайн — в удобном для вас темпе</p>
     </div>
     <div class="format-grid reveal">
+      <div class="format-cell">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Очно в Казани</h3>
+        <p>Личная встреча в кабинете — адрес пришлю при записи</p>
+      </div>
       <div class="format-cell">
         <div class="icon-badge">
           <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
         <h3>Онлайн</h3>
-        <p>Формат видео- или аудио-звонка, из любой точки мира</p>
+        <p>Видео- или аудио-звонок, из любой точки мира</p>
       </div>
       <div class="format-cell">
         <div class="icon-badge">
@@ -654,7 +713,7 @@
     <div class="contact-box reveal">
       <div class="eyebrow center">Связаться</div>
       <h2>Готовы сделать <em>первый шаг</em>?</h2>
-      <p>Напишите удобным способом — расскажу подробнее о формате работы и отвечу на вопросы. Все контакты на один номер:</p>
+      <p>Напишите удобным способом — расскажу про формат работы, помогу выбрать между очной встречей в Казани и онлайном, отвечу на вопросы. Все контакты на один номер:</p>
 
       <a href="tel:+79050218535" class="contact-phone">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -721,8 +780,8 @@
       </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Лилия Гарипова</span>
-      <span>Все консультации онлайн</span>
+      <span>© 2026 Лилия Гарипова, психолог-консультант · Казань</span>
+      <span>Очные консультации в Казани и онлайн</span>
     </div>
   </div>
 </footer>
