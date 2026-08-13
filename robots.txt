@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://liliya-garipova.ru/sitemap.xml

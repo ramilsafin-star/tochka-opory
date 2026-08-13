@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Точка опоры — Лилия Гарипова, психолог-консультант</title>
+<meta name="description" content="Точка опоры — онлайн-консультации психолога Лилии Гариповой. Тревога, выгорание, отношения, границы, кризис смысла — без идеализации, с реальными инструментами.">
+<meta name="theme-color" content="#2e332b">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Точка опоры — Лилия Гарипова, психолог-консультант">
+<meta property="og:description" content="Онлайн-консультации: тревога и выгорание, отношения и границы, кризис смысла. Без идеализации — только рабочие инструменты.">
+<meta property="og:image" content="https://liliya-garipova.ru/og-image.png">
+<meta property="og:url" content="https://liliya-garipova.ru/">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Точка опоры — Лилия Гарипова, психолог-консультант">
+<meta name="twitter:description" content="Онлайн-консультации: тревога и выгорание, отношения и границы, кризис смысла.">
+<meta name="twitter:image" content="https://liliya-garipova.ru/og-image.png">
+<link rel="canonical" href="https://liliya-garipova.ru/">
+<meta name="google-site-verification" content="PA6OUBIQsQDjvZAm_HTqSFWzqesARnvlUuNGgHdyroY" />
+<meta name="yandex-verification" content="1feac802059a02ab" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Лилия Гарипова",
+  "jobTitle": "Психолог-консультант",
+  "description": "Онлайн-консультации психолога: тревога и выгорание, отношения и границы, кризис смысла и идентичности.",
+  "url": "https://liliya-garipova.ru/",
+  "image": "https://liliya-garipova.ru/ps_hero.webp",
+  "telephone": "+7 905 021-85-35",
+  "sameAs": [
+    "https://t.me/Liliya8619",
+    "https://t.me/psychology2025Liliya",
+    "https://wa.me/79050218535"
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Онлайн-консультация психолога",
+      "areaServed": "Онлайн",
+      "provider": { "@type": "Person", "name": "Лилия Гарипова" }
+    }
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#faf8f3;
+    --surface:#fffdf9;
+    --warm:#f3ede2;
+    --sage-bg:#eef0e8;
+    --ink:#22211d;
+    --muted:#6d665a;
+    --sage:#6f7d64;
+    --sage-dark:#4e5a45;
+    --sage-tint:#e4eadb;
+    --sand:#8a6f5c;
+    --sand-tint:#ecdfd2;
+    --line:#e8e0d1;
+    --line-soft:#f0e9dc;
+    --dark:#2a2f27;
+    --font-serif:'Playfair Display', Georgia, serif;
+    --font-sans:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --shadow-sm:0 2px 8px rgba(44,42,37,0.04);
+    --shadow-md:0 12px 32px -12px rgba(44,42,37,0.14);
+    --shadow-lg:0 28px 64px -24px rgba(85,98,75,0.26);
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--font-sans);
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.7;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--sage-tint);color:var(--sage-dark);}
+  h1,h2,h3,.quote-mark,.method-num,.chip-quote{font-family:var(--font-serif);}
+  a{text-decoration:none;color:inherit;}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--sage);outline-offset:3px;border-radius:6px;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1120px;margin:0 auto;padding:0 28px;}
+  section{padding:112px 0;scroll-margin-top:88px;}
+
+  /* Subtle paper texture */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.35;
+    background-image:radial-gradient(rgba(138,111,92,0.10) 0.5px, transparent 0.5px);
+    background-size:4px 4px;
+  }
+
+  /* Reveal animation */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.22,.61,.36,1), transform .8s cubic-bezier(.22,.61,.36,1);}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+  .d1{transition-delay:.1s;} .d2{transition-delay:.2s;} .d3{transition-delay:.3s;}
+
+  /* Eyebrow */
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:12px;
+    font-size:12px;font-weight:600;letter-spacing:2.6px;text-transform:uppercase;
+    color:var(--sage-dark);margin-bottom:20px;
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--sage);}
+  .center .eyebrow::after{content:"";width:28px;height:1px;background:var(--sage);}
+  .eyebrow.on-dark{color:#b8c2a8;}
+  .eyebrow.on-dark::before,.eyebrow.on-dark::after{background:#7b876c;}
+  .center{text-align:center;}
+
+  /* Typography */
+  h1{
+    font-size:clamp(40px, 5.2vw, 62px);font-weight:500;line-height:1.1;
+    letter-spacing:-0.018em;margin-bottom:26px;
+  }
+  h2{font-size:clamp(30px, 3.5vw, 42px);font-weight:500;line-height:1.16;letter-spacing:-0.014em;margin-bottom:16px;}
+  h1 em, h2 em{font-style:italic;color:var(--sage-dark);}
+  .section-sub{color:var(--muted);max-width:620px;font-size:17px;}
+  .center .section-sub{margin:0 auto;}
+  .section-head{margin-bottom:68px;}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(250,248,243,0.82);
+    backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);
+    border-bottom:1px solid transparent;
+    transition:border-color .3s ease, box-shadow .3s ease, padding .3s ease;
+  }
+  header.scrolled{border-bottom-color:var(--line);box-shadow:0 4px 24px rgba(44,42,37,0.06);}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;transition:padding .3s var(--ease);}
+  header.scrolled .nav{padding:13px 0;}
+  .logo{display:flex;align-items:center;gap:11px;}
+  .logo svg{transition:transform .4s var(--ease);}
+  .logo:hover svg{transform:rotate(18deg);}
+  .logo-text{font-family:var(--font-serif);font-size:21px;font-weight:600;letter-spacing:.2px;}
+  .nav-links{display:flex;align-items:center;gap:32px;font-size:14px;font-weight:500;}
+  .nav-links a:not(.btn){color:var(--ink);position:relative;padding:4px 0;opacity:.85;transition:opacity .2s;}
+  .nav-links a:not(.btn):hover{opacity:1;}
+  .nav-links a:not(.btn)::after{
+    content:"";position:absolute;left:0;bottom:-1px;width:0;height:1px;background:var(--sage-dark);
+    transition:width .3s ease;
+  }
+  .nav-links a:not(.btn):hover::after{width:100%;}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--ink);}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:16px 32px;border-radius:999px;
+    background:var(--sage);color:#fff;font-size:14.5px;font-weight:600;font-family:var(--font-sans);
+    letter-spacing:.2px;border:none;cursor:pointer;position:relative;
+    transition:background .25s var(--ease), transform .25s var(--ease), box-shadow .25s var(--ease);
+    box-shadow:0 10px 26px -8px rgba(111,125,100,0.5);
+  }
+  .btn:hover{background:var(--sage-dark);transform:translateY(-2px);box-shadow:0 16px 32px -10px rgba(78,90,69,0.55);}
+  .btn:active{transform:translateY(0);}
+  .btn svg{width:16px;height:16px;flex-shrink:0;}
+  .btn .arrow{transition:transform .25s var(--ease);}
+  .btn:hover .arrow{transform:translateX(4px);}
+  .btn-outline{background:transparent;border:1.5px solid #cfd6c2;color:var(--sage-dark);box-shadow:none;}
+  .btn-outline:hover{background:var(--sage);border-color:var(--sage);color:#fff;box-shadow:0 12px 28px -10px rgba(111,125,100,0.45);}
+  .btn-sm{padding:11px 22px;font-size:13.5px;box-shadow:none;}
+  .btn-sm:hover{box-shadow:0 10px 22px -8px rgba(78,90,69,0.45);}
+
+  /* Hero */
+  .hero{
+    padding:96px 0 110px;overflow:hidden;position:relative;
+    background:linear-gradient(180deg,#fffdf9 0%, var(--bg) 100%);
+  }
+  .hero-grid{display:grid;grid-template-columns:1.05fr .85fr;gap:72px;align-items:center;}
+  .hero-note{font-size:12.5px;font-weight:600;letter-spacing:2.4px;text-transform:uppercase;color:var(--sage-dark);margin-bottom:24px;display:inline-flex;align-items:center;gap:12px;}
+  .hero-note::before{content:"";width:34px;height:1px;background:var(--sage);}
+  .hero p.sub{font-size:18px;color:var(--muted);max-width:520px;margin-bottom:40px;}
+  .hero-buttons{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+
+  .accent-underline{position:relative;white-space:nowrap;}
+  .accent-underline svg{
+    position:absolute;left:0;bottom:-8px;width:100%;height:12px;overflow:visible;
+  }
+  .accent-underline svg path{
+    stroke:var(--sand);stroke-width:2.6;fill:none;stroke-linecap:round;opacity:.65;
+  }
+
+  .hero-visual{position:relative;justify-self:center;width:min(400px, 100%);}
+  .hero-photo{
+    width:min(400px, 100%);aspect-ratio:4/5;position:relative;z-index:2;
+    border-radius:999px 999px 30px 30px;overflow:hidden;
+    box-shadow:var(--shadow-lg);
+  }
+  .hero-photo::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg, transparent 62%, rgba(42,47,39,0.16) 100%);
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center;}
+  .hero-frame{
+    position:absolute;z-index:1;inset:-7px;
+    border:1.5px solid var(--sage);border-radius:999px 999px 36px 36px;opacity:.45;
+  }
+  .hero-blob{
+    position:absolute;z-index:0;width:130%;aspect-ratio:1;left:50%;top:50%;
+    transform:translate(-50%,-46%);border-radius:50%;
+    background:radial-gradient(circle at 35% 35%, var(--sage-tint) 0%, var(--sand-tint) 55%, transparent 72%);
+    opacity:.8;filter:blur(2px);
+  }
+  .hero-chip{
+    position:absolute;z-index:3;left:-44px;bottom:-26px;
+    background:var(--surface);border:1px solid var(--line);border-radius:18px;
+    padding:14px 20px;display:flex;align-items:center;gap:12px;
+    box-shadow:0 20px 44px -14px rgba(44,42,37,0.22);
+  }
+  .hero-chip .chip-quote{font-size:15px;font-style:italic;color:var(--ink);line-height:1.4;}
+  .hero-chip .chip-label{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--sage-dark);font-weight:600;margin-top:2px;}
+
+  /* About */
+  .about-section{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start;}
+  .about-quote-col{position:relative;padding-top:34px;}
+  .quote-mark{
+    position:absolute;top:-14px;left:-8px;font-size:130px;line-height:1;color:var(--sage);opacity:.18;
+    user-select:none;pointer-events:none;
+  }
+  .about-quote{
+    font-family:var(--font-serif);font-style:italic;font-size:clamp(22px,2.4vw,27px);
+    line-height:1.5;color:var(--ink);margin-bottom:28px;
+  }
+  .about-sign{display:flex;align-items:center;gap:14px;}
+  .about-sign .sign-line{width:36px;height:1px;background:var(--sand);}
+  .about-sign .sign-name{font-family:var(--font-serif);font-size:17px;font-style:italic;color:var(--sand);}
+  .about-sign .sign-role{font-size:12.5px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);display:block;margin-top:2px;}
+  .about-text p{margin-bottom:18px;color:var(--muted);font-size:16.5px;}
+  .about-text p.lead{color:var(--ink);font-size:17.5px;}
+  .about-text p:last-child{margin-bottom:0;}
+
+  /* Help cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;}
+  .card{
+    background:var(--surface);padding:38px 32px;border-radius:22px;
+    border:1px solid var(--line);position:relative;overflow:hidden;
+    box-shadow:var(--shadow-sm);
+    transition:transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
+  }
+  .card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg, var(--sage), var(--sand));
+    opacity:0;transition:opacity .4s var(--ease);
+  }
+  .card::after{
+    content:attr(data-num);position:absolute;top:24px;right:28px;
+    font-family:var(--font-serif);font-size:15px;font-style:italic;color:var(--sage);opacity:.45;
+  }
+  .card:hover{transform:translateY(-6px);border-color:#dbe2ce;box-shadow:0 26px 50px -18px rgba(85,98,75,0.26);}
+  .card:hover::before{opacity:.85;}
+  .icon-badge{
+    width:56px;height:56px;border-radius:50%;
+    background:linear-gradient(145deg, var(--sage-tint), #eef2e6);
+    display:flex;align-items:center;justify-content:center;margin-bottom:24px;
+    transition:transform .4s var(--ease);
+  }
+  .card:hover .icon-badge{transform:scale(1.06) rotate(-3deg);}
+  .icon-badge svg{width:24px;height:24px;stroke:var(--sage-dark);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+  .card h3{font-size:19.5px;font-weight:600;margin-bottom:10px;line-height:1.35;letter-spacing:-0.01em;}
+  .card p{color:var(--muted);font-size:15px;}
+
+  /* Method */
+  .method{background:var(--sage-bg);}
+  .method-list{max-width:760px;margin:0 auto;}
+  .method-item{
+    display:grid;grid-template-columns:96px 1fr;gap:28px;align-items:start;
+    padding:38px 0;border-top:1px solid #dde2d2;position:relative;
+    transition:padding-left .35s var(--ease);
+  }
+  .method-item:last-child{border-bottom:1px solid #dde2d2;}
+  .method-item:hover{padding-left:10px;}
+  .method-num{
+    font-size:52px;font-weight:500;line-height:1;color:var(--sage);opacity:.42;font-style:italic;
+    transition:opacity .35s var(--ease);
+  }
+  .method-item:hover .method-num{opacity:.72;}
+  .method-item h3{font-size:20.5px;font-weight:600;margin-bottom:8px;letter-spacing:-0.01em;}
+  .method-item p{color:var(--muted);font-size:16px;max-width:560px;}
+
+  /* Format strip */
+  .format-section{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .format-grid{display:grid;grid-template-columns:repeat(3,1fr);}
+  .format-cell{text-align:center;padding:16px 40px;position:relative;}
+  .format-cell + .format-cell{border-left:1px solid var(--line);}
+  .format-cell .icon-badge{margin:0 auto 20px;transition:transform .4s var(--ease);}
+  .format-cell:hover .icon-badge{transform:translateY(-4px);}
+  .format-cell h3{font-size:18.5px;font-weight:600;margin-bottom:8px;letter-spacing:-0.01em;}
+  .format-cell p{color:var(--muted);font-size:14.5px;max-width:240px;margin:0 auto;}
+
+  /* Channel */
+  .channel-block{
+    background:
+      radial-gradient(circle at 78% 12%, rgba(111,125,100,0.32) 0%, transparent 52%),
+      radial-gradient(circle at 12% 92%, rgba(138,111,92,0.24) 0%, transparent 50%),
+      var(--dark);
+    color:#eceade;border-radius:34px;
+    padding:92px 56px;text-align:center;position:relative;overflow:hidden;
+    box-shadow:0 34px 70px -30px rgba(42,47,39,0.55);
+  }
+  .channel-block h2{color:#f7f5ec;position:relative;}
+  .channel-block p{color:#b4b8a8;max-width:560px;margin:0 auto 38px;font-size:16.5px;position:relative;}
+  .channel-block .eyebrow{position:relative;}
+  .channel-block .btn{background:#e4eadb;color:var(--dark);box-shadow:none;position:relative;}
+  .channel-block .btn:hover{background:#fff;transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,0.25);}
+  .deco-circle{position:absolute;border-radius:50%;border:1px solid rgba(228,234,219,0.1);pointer-events:none;}
+  .deco-circle.c1{width:420px;height:420px;top:-160px;right:-120px;}
+  .deco-circle.c2{width:280px;height:280px;top:-90px;right:-50px;}
+  .deco-circle.c3{width:380px;height:380px;bottom:-200px;left:-140px;}
+  .deco-dot{position:absolute;width:10px;height:10px;border-radius:50%;background:rgba(228,234,219,0.25);}
+  .deco-dot.d-a{top:74px;right:170px;}
+  .deco-dot.d-b{bottom:60px;left:120px;width:7px;height:7px;}
+
+  /* Contact */
+  .contact-box{
+    max-width:720px;margin:0 auto;background:var(--surface);border-radius:30px;
+    padding:64px 56px 52px;border:1px solid var(--line);text-align:center;
+    box-shadow:0 28px 66px -26px rgba(85,98,75,0.22);position:relative;overflow:hidden;
+  }
+  .contact-box::before{
+    content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
+    width:96px;height:3px;border-radius:0 0 4px 4px;
+    background:linear-gradient(90deg, var(--sage), var(--sand));opacity:.8;
+  }
+  .contact-box > p{color:var(--muted);margin:0 auto 14px;max-width:470px;}
+
+  /* Phone display */
+  .contact-phone{
+    display:inline-flex;align-items:center;gap:11px;margin-bottom:30px;
+    font-family:var(--font-serif);font-size:clamp(24px,3vw,31px);font-weight:600;
+    color:var(--ink);letter-spacing:.5px;transition:color .25s var(--ease);
+  }
+  .contact-phone svg{width:20px;height:20px;stroke:var(--sage);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+  a.contact-phone:hover{color:var(--sage-dark);}
+
+  /* Unified channel grid */
+  .channel-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:26px;
+  }
+  .ch{
+    display:flex;flex-direction:column;align-items:center;gap:11px;
+    padding:22px 12px 20px;border-radius:18px;background:#fdfbf6;
+    border:1px solid var(--line-soft);cursor:pointer;position:relative;
+    font-family:var(--font-sans);font-size:13.5px;font-weight:600;color:var(--ink);
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease), background .3s var(--ease);
+  }
+  .ch:hover{transform:translateY(-4px);background:#fff;border-color:#ddd4c2;box-shadow:0 16px 32px -14px rgba(44,42,37,0.22);}
+  .ch-icon{
+    width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+    transition:transform .3s var(--ease);
+  }
+  .ch:hover .ch-icon{transform:scale(1.08);}
+  .ch-icon svg{width:25px;height:25px;display:block;}
+  .ch-wa .ch-icon{background:#e7f6ea;}
+  .ch-tg .ch-icon{background:#e4f1fa;}
+  .ch-max .ch-icon{background:#ede9fb;}
+  .ch-call .ch-icon{background:var(--sage-tint);}
+  .ch-note{font-size:11.5px;font-weight:500;color:var(--muted);letter-spacing:.2px;}
+  .ch.copied{border-color:var(--sage);background:#f4f7ef;}
+  .contact-box > p.contact-hint{font-size:13.5px;color:#8d8676;margin:0 auto;max-width:400px;line-height:1.55;}
+
+  /* Toast */
+  .toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,16px);
+    background:var(--dark);color:#eef1e7;padding:13px 24px;border-radius:999px;
+    font-size:14px;font-weight:500;z-index:500;opacity:0;pointer-events:none;
+    box-shadow:0 18px 40px -12px rgba(0,0,0,.42);
+    transition:opacity .3s var(--ease), transform .3s var(--ease);
+  }
+  .toast.show{opacity:1;transform:translate(-50%,0);}
+
+  /* Footer */
+  footer{padding:52px 0 44px;color:var(--muted);font-size:14px;}
+  .footer-top{
+    display:flex;align-items:flex-start;justify-content:space-between;gap:28px;flex-wrap:wrap;
+    padding-bottom:32px;border-bottom:1px solid var(--line);margin-bottom:26px;
+  }
+  .footer-logo{display:flex;align-items:center;gap:10px;font-family:var(--font-serif);font-weight:600;font-size:18px;color:var(--ink);}
+  .footer-tag{font-size:13.5px;color:var(--muted);margin-top:8px;max-width:300px;}
+  .footer-links{display:flex;gap:26px;font-size:14px;flex-wrap:wrap;}
+  .footer-links a{color:var(--muted);transition:color .2s;}
+  .footer-links a:hover{color:var(--sage-dark);}
+  .footer-bottom{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:#96907f;}
+
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:64px;text-align:center;}
+    .hero-note{justify-content:center;}
+    .hero-note::before{display:none;}
+    .hero p.sub{margin-left:auto;margin-right:auto;}
+    .hero-buttons{justify-content:center;}
+    .hero-visual{max-width:360px;margin:0 auto;}
+    .hero-chip{left:2px;}
+    .about{grid-template-columns:1fr;gap:52px;}
+    .method-item{grid-template-columns:64px 1fr;gap:20px;}
+    .method-num{font-size:40px;}
+  }
+  @media(max-width:640px){
+    .menu-toggle{display:flex;align-items:center;}
+    .nav-links{
+      position:fixed;top:66px;left:0;right:0;background:var(--bg);
+      flex-direction:column;align-items:stretch;gap:0;max-height:0;overflow:hidden;
+      transition:max-height .35s ease;border-bottom:1px solid var(--line);
+    }
+    .nav-links.open{max-height:440px;box-shadow:0 24px 40px rgba(44,42,37,0.08);}
+    .nav-links a:not(.btn){padding:16px 26px;border-top:1px solid var(--line);opacity:1;}
+    .nav-links a:not(.btn)::after{display:none;}
+    .nav-links .btn{margin:18px 26px;justify-content:center;}
+    section{padding:72px 0;}
+    .hero{padding:60px 0 84px;}
+    .hero-chip{padding:11px 16px;bottom:-18px;}
+    .hero-chip .chip-quote{font-size:13.5px;}
+    .format-grid{grid-template-columns:1fr;gap:44px;}
+    .format-cell{padding:0 12px;}
+    .format-cell + .format-cell{border-left:none;padding-top:44px;border-top:1px solid var(--line);}
+    .channel-block{padding:64px 28px;border-radius:24px;}
+    .contact-box{padding:48px 22px 40px;border-radius:24px;}
+    .section-head{margin-bottom:44px;}
+    .channel-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+    .ch{padding:20px 8px 18px;font-size:13px;}
+    .ch-icon{width:44px;height:44px;}
+  }
+  @media(max-width:360px){
+    .channel-grid{grid-template-columns:1fr;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:.01ms !important;transition-duration:.01ms !important;}
+    html{scroll-behavior:auto;}
+    .reveal{opacity:1;transform:none;}
+  }
+</style>
+</head>
+<body>
+<header id="siteHeader">
+  <div class="container nav">
+    <a href="#" class="logo" aria-label="Точка опоры — на главную">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="26" fill="none" stroke="#6f7d64" stroke-width="4.5"/>
+        <circle cx="32" cy="32" r="9" fill="#8a6f5c"/>
+      </svg>
+      <span class="logo-text">Точка опоры</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">Обо мне</a>
+      <a href="#help">Как я помогаю</a>
+      <a href="#method">Подход</a>
+      <a href="#format">Формат</a>
+      <a href="#channel">Канал</a>
+      <a href="#contact">Контакты</a>
+      <a href="#contact" class="btn btn-sm">Записаться</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+      <svg id="iconMenu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg id="iconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="hero-note reveal">Онлайн · индивидуально · конфиденциально</div>
+      <h1 class="reveal d1">Точка опоры — <em>психология</em>, которая держит <span class="accent-underline">на плаву<svg viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8 C 25 3, 55 10, 117 5"/></svg></span></h1>
+      <p class="sub reveal d2">Практикующий психолог-консультант Лилия Гарипова. Без готовых идеалов и «психо-жаргона» — только реальные инструменты, которые работают.</p>
+      <div class="hero-buttons reveal d3">
+        <a href="#contact" class="btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Записаться на консультацию
+        </a>
+        <a href="#channel" class="btn btn-outline">Читать канал</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal d2">
+      <div class="hero-blob" aria-hidden="true"></div>
+      <div class="hero-frame" aria-hidden="true"></div>
+      <div class="hero-photo">
+        <img src="ps_hero.webp" alt="Лилия Гарипова — психолог-консультант" fetchpriority="high">
+      </div>
+      <div class="hero-chip">
+        <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true" style="flex-shrink:0">
+          <circle cx="32" cy="32" r="26" fill="none" stroke="#6f7d64" stroke-width="4.5"/>
+          <circle cx="32" cy="32" r="9" fill="#8a6f5c"/>
+        </svg>
+        <div>
+          <div class="chip-quote">«Устойчивость — это навык»</div>
+          <div class="chip-label">Точка опоры</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <div class="container about">
+    <div class="about-quote-col reveal">
+      <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+      <p class="about-quote">Устойчивость — не врождённая черта. Это навык. И&nbsp;его можно вырастить.</p>
+      <div class="about-sign">
+        <span class="sign-line" aria-hidden="true"></span>
+        <div>
+          <span class="sign-name">Лилия Гарипова</span>
+          <span class="sign-role">Психолог-консультант</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-text reveal d1">
+      <div class="eyebrow">Кто я</div>
+      <h2>Обо мне</h2>
+      <p class="lead">Меня зовут Лилия Гарипова, я практикующий психолог-консультант. Пишу и работаю без пафоса и громких обещаний «всё наладить» — с уважением к вашему опыту и вашему темпу.</p>
+      <p>Здесь не стыдят за усталость, откладывание дел или трудность сказать «нет». Здесь ищут не идеальные ответы, а рабочие инструменты — то, что действительно помогает почувствовать опору под ногами.</p>
+      <p>Если вам ближе тихая честность, чем громкие советы — вы в нужном месте.</p>
+    </div>
+  </div>
+</section>
+
+<section id="help">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Запросы</div>
+      <h2>С чем я <em>помогаю</em></h2>
+      <p class="section-sub">Реальные темы, с которыми чаще всего приходят на консультацию</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal" data-num="01">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Тревога и выгорание</h3>
+        <p>Работа с фоновой тревогой, истощением и хронической усталостью. Техники быстрой стабилизации и восстановления ресурса.</p>
+      </div>
+      <div class="card reveal d1" data-num="02">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Отношения и границы</h3>
+        <p>Как перестать быть «эхом» чужих ожиданий, выстраивать границы и оставаться собой в близких отношениях.</p>
+      </div>
+      <div class="card reveal d2" data-num="03">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        </div>
+        <h3>Кризис смысла и идентичности</h3>
+        <p>«Вроде всё есть, а внутри — пустота». Работа с кризисом среднего возраста и поиском опоры в переменах.</p>
+      </div>
+      <div class="card reveal d3" data-num="04">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Стыд, самооценка, созависимость</h3>
+        <p>Мягкая работа с внутренним критиком, чувством вины и потребностью нравиться всем.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="method" class="method">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Философия</div>
+      <h2>Мой <em>подход</em></h2>
+      <p class="section-sub">Без идеализации и токсичной позитивности — только то, что действительно работает</p>
+    </div>
+    <div class="method-list">
+      <div class="method-item reveal">
+        <div class="method-num">01</div>
+        <div>
+          <h3>Никакого «просто думай позитивно»</h3>
+          <p>Принуждать себя к позитиву — это насилие над своими чувствами. Мы начинаем с признания того, что есть на самом деле.</p>
+        </div>
+      </div>
+      <div class="method-item reveal">
+        <div class="method-num">02</div>
+        <div>
+          <h3>Рост — не линия вверх</h3>
+          <p>Откаты и возвращение старых реакций — не провал, а естественная часть пути. Психика не учится линейно.</p>
+        </div>
+      </div>
+      <div class="method-item reveal">
+        <div class="method-num">03</div>
+        <div>
+          <h3>Практические инструменты</h3>
+          <p>Техники заземления, работы с дыханием и телом, которые можно применить уже сегодня — а не только разговоры «в целом».</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="format" class="format-section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Организация</div>
+      <h2>Формат работы</h2>
+      <p class="section-sub">Консультации онлайн, в удобном для вас темпе</p>
+    </div>
+    <div class="format-grid reveal">
+      <div class="format-cell">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Онлайн</h3>
+        <p>Формат видео- или аудио-звонка, из любой точки мира</p>
+      </div>
+      <div class="format-cell">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Индивидуально</h3>
+        <p>Темп и длительность работы обсуждаются лично</p>
+      </div>
+      <div class="format-cell">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Конфиденциально</h3>
+        <p>Всё, что обсуждается на консультации, остаётся между нами</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="channel">
+  <div class="container">
+    <div class="channel-block reveal">
+      <span class="deco-circle c1" aria-hidden="true"></span>
+      <span class="deco-circle c2" aria-hidden="true"></span>
+      <span class="deco-circle c3" aria-hidden="true"></span>
+      <span class="deco-dot d-a" aria-hidden="true"></span>
+      <span class="deco-dot d-b" aria-hidden="true"></span>
+      <div class="eyebrow on-dark center">Telegram</div>
+      <h2>Канал <em style="color:#c9d4b9">«Точка опоры»</em> в Telegram</h2>
+      <p>Бесплатные практики, разборы реальных ситуаций и честный взгляд на психологию — без идеализации и лишнего пафоса. Присоединяйтесь, если хотите разобраться в себе уже сейчас.</p>
+      <a href="https://t.me/psychology2025Liliya" target="_blank" rel="noopener" class="btn">
+        Подписаться на канал
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-box reveal">
+      <div class="eyebrow center">Связаться</div>
+      <h2>Готовы сделать <em>первый шаг</em>?</h2>
+      <p>Напишите удобным способом — расскажу подробнее о формате работы и отвечу на вопросы. Все контакты на один номер:</p>
+
+      <a href="tel:+79050218535" class="contact-phone">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +7 905 021-85-35
+      </a>
+
+      <div class="channel-grid">
+        <a href="https://wa.me/79050218535" target="_blank" rel="noopener" class="ch ch-wa">
+          <span class="ch-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.09-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.49-.4-.42-.55-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.72 2.62 4.16 3.68.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+          </span>
+          WhatsApp
+          <span class="ch-note">Написать</span>
+        </a>
+
+        <a href="https://t.me/Liliya8619" target="_blank" rel="noopener" class="ch ch-tg">
+          <span class="ch-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#29A9EB"/><path fill="#fff" d="M17.6 7.35 15.62 17c-.15.66-.54.82-1.09.51l-3.02-2.23-1.46 1.4c-.16.16-.3.3-.61.3l.22-3.09 5.63-5.08c.24-.22-.06-.34-.38-.12l-6.96 4.38-3-.94c-.65-.2-.66-.65.14-.96l11.72-4.52c.54-.2 1.02.13.79 1.7z"/></svg>
+          </span>
+          Telegram
+          <span class="ch-note">Написать</span>
+        </a>
+
+        <button type="button" class="ch ch-max" id="maxBtn" data-phone="+79050218535">
+          <span class="ch-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6" fill="#6E4BF0"/><path fill="#fff" d="M6.6 16.6V7.4h2.02l2.86 5.02 2.85-5.02h2.01v9.2h-1.94v-5.8l-2.35 4.1h-1.16l-2.35-4.1v5.8z"/></svg>
+          </span>
+          MAX
+          <span class="ch-note">Копировать номер</span>
+        </button>
+
+        <a href="tel:+79050218535" class="ch ch-call">
+          <span class="ch-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4e5a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          Позвонить
+          <span class="ch-note">По телефону</span>
+        </a>
+      </div>
+
+      <p class="contact-hint">В MAX меня можно найти по этому же номеру — нажмите «MAX», номер скопируется.</p>
+    </div>
+  </div>
+</section>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="#6f7d64" stroke-width="4.5"/><circle cx="32" cy="32" r="9" fill="#8a6f5c"/></svg>
+          Точка опоры
+        </div>
+        <p class="footer-tag">Психология без идеализации — рабочие инструменты и уважение к вашему темпу.</p>
+      </div>
+      <nav class="footer-links" aria-label="Навигация в подвале">
+        <a href="#about">Обо мне</a>
+        <a href="#help">Как я помогаю</a>
+        <a href="#format">Формат</a>
+        <a href="https://t.me/psychology2025Liliya" target="_blank" rel="noopener">Канал в Telegram</a>
+        <a href="#contact">Связаться</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Лилия Гарипова</span>
+      <span>Все консультации онлайн</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var menuToggle = document.getElementById('menuToggle');
+  var navLinks = document.getElementById('navLinks');
+  var iconMenu = document.getElementById('iconMenu');
+  var iconClose = document.getElementById('iconClose');
+  var siteHeader = document.getElementById('siteHeader');
+
+  function closeMenu(){
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded','false');
+    iconMenu.style.display='block';
+    iconClose.style.display='none';
+  }
+
+  menuToggle.addEventListener('click', function(){
+    var isOpen = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    iconMenu.style.display = isOpen ? 'none' : 'block';
+    iconClose.style.display = isOpen ? 'block' : 'none';
+  });
+
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+
+  function onScroll(){
+    siteHeader.classList.toggle('scrolled', window.scrollY > 10);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* Copy phone for MAX */
+  var toastEl = document.getElementById('toast');
+  var toastTimer;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 3200);
+  }
+
+  function legacyCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly','');
+    ta.style.position = 'fixed';
+    ta.style.top = '-1000px';
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch(e){ ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  var maxBtn = document.getElementById('maxBtn');
+  if(maxBtn){
+    maxBtn.addEventListener('click', function(){
+      var phone = maxBtn.getAttribute('data-phone');
+      function done(ok){
+        if(ok){
+          maxBtn.classList.add('copied');
+          setTimeout(function(){ maxBtn.classList.remove('copied'); }, 2200);
+          showToast('Номер скопирован — найдите меня в MAX');
+        } else {
+          showToast('Мой номер в MAX: ' + phone);
+        }
+      }
+      if(navigator.clipboard && window.isSecureContext){
+        navigator.clipboard.writeText(phone).then(function(){ done(true); }, function(){ done(legacyCopy(phone)); });
+      } else {
+        done(legacyCopy(phone));
+      }
+    });
+  }
+
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.12});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('is-visible'); });
+  }
+</script>
+</body>
+</html>
