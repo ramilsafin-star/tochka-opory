@@ -40,6 +40,36 @@
         "addressRegion": "Республика Татарстан",
         "addressCountry": "RU"
       },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Чувашский государственный университет им. И. Н. Ульянова"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "educationalLevel": "Высшее образование (специалитет)",
+          "name": "Психолог. Преподаватель психологии",
+          "recognizedBy": {
+            "@type": "CollegeOrUniversity",
+            "name": "Чувашский государственный университет им. И. Н. Ульянова"
+          },
+          "dateCreated": "2009"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "educationalLevel": "Профессиональная переподготовка",
+          "name": "Психологическое консультирование",
+          "dateCreated": "2025-12"
+        }
+      ],
+      "knowsAbout": [
+        "Психологическое консультирование",
+        "Тревога и выгорание",
+        "Отношения и личные границы",
+        "Самооценка и созависимость"
+      ],
       "sameAs": [
         "https://t.me/Liliya8619",
         "https://t.me/psychology2025Liliya",
@@ -358,6 +388,23 @@
   .format-cell h3{font-size:18.5px;font-weight:600;margin-bottom:8px;letter-spacing:-0.01em;}
   .format-cell p{color:var(--muted);font-size:14.5px;max-width:240px;margin:0 auto;}
 
+  /* Education */
+  .edu-list{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:900px;margin:0 auto;}
+  .edu-item{
+    background:var(--surface);border:1px solid var(--line);border-radius:22px;
+    padding:34px 32px;position:relative;
+    transition:transform .45s var(--ease),box-shadow .45s var(--ease);
+  }
+  .edu-item:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+  .edu-item .icon-badge{margin-bottom:22px;}
+  .edu-year{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--sand);font-weight:600;}
+  .edu-item h3{font-size:19px;font-weight:600;margin:10px 0 6px;letter-spacing:-0.01em;line-height:1.35;}
+  .edu-place{color:var(--muted);font-size:15px;margin-bottom:18px;}
+  .edu-qual{font-size:15px;border-top:1px solid var(--line-soft);padding-top:16px;}
+  .edu-qual span{color:var(--muted);display:block;font-size:11.5px;letter-spacing:1px;text-transform:uppercase;margin-bottom:5px;}
+  .edu-note{text-align:center;color:var(--muted);font-size:14.5px;margin:34px auto 0;max-width:600px;}
+  @media(max-width:860px){ .edu-list{grid-template-columns:1fr;} }
+
   /* Price */
   .price-note{
     margin:56px auto 0;max-width:470px;text-align:center;
@@ -536,6 +583,7 @@
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="#about">Обо мне</a>
+      <a href="#education">Образование</a>
       <a href="#help">Как я помогаю</a>
       <a href="#method">Подход</a>
       <a href="#format">Формат</a>
@@ -604,6 +652,43 @@
       <p>Здесь не стыдят за усталость, откладывание дел или трудность сказать «нет». Здесь ищут не идеальные ответы, а рабочие инструменты — то, что действительно помогает почувствовать опору под ногами.</p>
       <p>Если вам ближе тихая честность, чем громкие советы — вы в нужном месте.</p>
     </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Квалификация</div>
+      <h2>Образование и <em>подготовка</em></h2>
+      <p class="section-sub">Профильное психологическое образование и профессиональная переподготовка по консультированию</p>
+    </div>
+    <div class="edu-list">
+      <div class="edu-item reveal">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+        </div>
+        <div class="edu-year">2009 · Высшее образование</div>
+        <h3>Чувашский государственный университет им.&nbsp;И.&nbsp;Н.&nbsp;Ульянова</h3>
+        <p class="edu-place">Специальность «Психология», очная форма обучения</p>
+        <div class="edu-qual">
+          <span>Квалификация</span>
+          Психолог. Преподаватель психологии
+        </div>
+      </div>
+      <div class="edu-item reveal d1">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>
+        </div>
+        <div class="edu-year">2025 · Профпереподготовка</div>
+        <h3>Психологическое консультирование</h3>
+        <p class="edu-place">Программа профессиональной переподготовки, Казань, декабрь&nbsp;2025</p>
+        <div class="edu-qual">
+          <span>Право на ведение деятельности</span>
+          Психологическое консультирование
+        </div>
+      </div>
+    </div>
+    <p class="edu-note reveal d2">Дипломы и удостоверения предоставляю по запросу — покажу на первой встрече или пришлю сканы в мессенджер.</p>
   </div>
 </section>
 
@@ -823,6 +908,7 @@
       </div>
       <nav class="footer-links" aria-label="Навигация в подвале">
         <a href="#about">Обо мне</a>
+        <a href="#education">Образование</a>
         <a href="#help">Как я помогаю</a>
         <a href="#format">Формат</a>
         <a href="https://t.me/psychology2025Liliya" target="_blank" rel="noopener">Канал в Telegram</a>
