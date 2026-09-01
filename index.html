@@ -84,7 +84,6 @@
       "url": "https://liliya-garipova.ru/",
       "image": "https://liliya-garipova.ru/og-image.png",
       "telephone": "+7 905 021-85-35",
-      "priceRange": "₽₽",
       "founder": { "@id": "https://liliya-garipova.ru/#person" },
       "address": {
         "@type": "PostalAddress",
@@ -103,9 +102,6 @@
         "itemListElement": [
           {
             "@type": "Offer",
-            "price": "2500",
-            "priceCurrency": "RUB",
-            "availability": "https://schema.org/InStock",
             "itemOffered": {
               "@type": "Service",
               "name": "Очная консультация психолога в Казани",
@@ -117,9 +113,6 @@
           },
           {
             "@type": "Offer",
-            "price": "2000",
-            "priceCurrency": "RUB",
-            "availability": "https://schema.org/InStock",
             "itemOffered": {
               "@type": "Service",
               "name": "Онлайн-консультация психолога",
@@ -444,29 +437,6 @@
   .lightbox-close svg{width:20px;height:20px;}
 
   @media(max-width:860px){ .edu-list{grid-template-columns:1fr;} .diplomas{grid-template-columns:1fr;} }
-
-  /* Price */
-  .price-note{
-    margin:56px auto 0;max-width:470px;text-align:center;
-    background:linear-gradient(150deg, var(--sage-tint), #f2f5ec);
-    border:1px solid #dbe2ce;border-radius:22px;padding:30px 34px 26px;
-  }
-  .price-label{
-    display:block;font-size:11.5px;font-weight:600;letter-spacing:2.2px;
-    text-transform:uppercase;color:var(--sage-dark);margin-bottom:18px;
-  }
-  .price-rows{display:flex;gap:14px;}
-  .price-row{
-    flex:1;background:rgba(255,255,255,.66);border-radius:15px;padding:16px 12px;
-  }
-  .price-name{display:block;font-size:13.5px;color:var(--muted);margin-bottom:5px;}
-  .price-value{
-    display:block;font-family:var(--font-serif);font-size:clamp(25px,2.9vw,31px);
-    font-weight:600;color:var(--ink);line-height:1.1;letter-spacing:-0.01em;
-  }
-  .price-unit{display:block;font-size:12px;color:var(--muted);margin-top:3px;}
-  .price-hint{display:block;font-size:13px;color:var(--muted);margin-top:16px;line-height:1.5;}
-  @media(max-width:420px){ .price-rows{flex-direction:column;gap:10px;} }
 
   /* Отзывы */
   .reviews-section{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
@@ -876,22 +846,6 @@
       </div>
     </div>
 
-    <div class="price-note reveal d1">
-      <span class="price-label">Стоимость консультации</span>
-      <div class="price-rows">
-        <div class="price-row">
-          <span class="price-name">Очно в Казани</span>
-          <span class="price-value">2500 ₽</span>
-          <span class="price-unit">за час</span>
-        </div>
-        <div class="price-row">
-          <span class="price-name">Онлайн</span>
-          <span class="price-value">2000 ₽</span>
-          <span class="price-unit">за час</span>
-        </div>
-      </div>
-      <span class="price-hint">Консультация длится 1 час. В стоимость очной встречи входит аренда кабинета</span>
-    </div>
   </div>
 </section>
 
